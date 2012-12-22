@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Text;
 using System.Web.Mvc;
+// ReSharper disable RedundantUsingDirective
+// Removing this messes up the nuget package...
+using BoxApi.V2;
+// ReSharper restore RedundantUsingDirective
 using BoxApi.V2.Authentication.OAuth2;
 using BoxApi.V2.Samples.WebAuthentication.MVC.Models;
 
