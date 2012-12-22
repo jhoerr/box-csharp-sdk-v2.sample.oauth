@@ -1,0 +1,2 @@
+(Get-Content packages\content\Controllers\HomeController.cs.pp) | ForEach-Object { $_ -replace "BoxApi.V2.Samples.WebAuthentication.MVC", '$rootnamespace$' } | Set-Content packages\content\Controllers\HomeController.cs.pp
+(Get-Content packages\content\Models\ErrorModel.cs.pp) | ForEach-Object { $_ -replace "BoxApi.V2.Samples.WebAuthentication.MVC", '$rootnamespace$' } | Set-Content packages\content\Models\ErrorModel.cs.pp
